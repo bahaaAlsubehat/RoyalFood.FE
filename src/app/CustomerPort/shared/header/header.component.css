@@ -1,0 +1,12 @@
+.fixed{
+    position:fixed;
+    width: 100%;
+    transition: .2s linear;
+    top: 0px;
+    background-color:darkslategray;
+}
+.notfixed{
+    transition: .2s linear;
+    top: -20px;
+    background-color:darkslategray;
+}
