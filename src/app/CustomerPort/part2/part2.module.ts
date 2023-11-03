@@ -8,6 +8,7 @@ import { ItemDetailsComponent } from './item-details/item-details.component';
 import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { SharedModule } from '../shared/shared.module';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { SharedModule } from '../shared/shared.module';
     CommonModule,
     Part2RoutingModule,
     SharedModule,
+    CarouselModule
   ]
 })
 export class Part2Module { }

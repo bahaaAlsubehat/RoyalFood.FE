@@ -4,6 +4,7 @@ import { AlertComponent } from './alert/alert.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { ModalComponent } from './modal/modal.component';
 
 
 
@@ -11,7 +12,8 @@ import { NgxSpinnerModule } from 'ngx-spinner';
   declarations: [
     AlertComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ModalComponent
   ],
   imports: [
     CommonModule,
@@ -22,6 +24,8 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     FooterComponent,
     AlertComponent,
     NgxSpinnerModule,
+    ModalComponent
+
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 

@@ -9,6 +9,9 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { CustomersSupportComponent } from './customers-support/customers-support.component';
 import { SharedModule } from "../shared/shared.module";
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -25,7 +28,11 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
         CommonModule,
         Part1RoutingModule,
         SharedModule,
-        CarouselModule ,
+        CarouselModule,
+        MatCheckboxModule,
+        HttpClientModule,
+        FormsModule,
+
     ],
 
 })

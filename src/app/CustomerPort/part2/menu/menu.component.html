@@ -41,19 +41,24 @@
 	<!-- products -->
 	<div class="product-section mt-150 mb-150">
 		<div class="container">
-
+			
 			<div class="row">
                 <div class="col-md-12">
-                    <div class="product-filters">
+                    <div class="product-filters" >
                         <ul>
-                            <li class="active" data-filter="*">All</li>
-                            <li data-filter=".strawberry">Strawberry</li>
-                            <li data-filter=".berry">Berry</li>
-                            <li data-filter=".lemon">Lemon</li>
+							<owl-carousel-o [options]="customOptions">
+								<ng-template carouselSlide="customOptions">
+							<li class="active" data-filter="*">All</li>
+							<li data-filter=".strawberry">Strawberry</li>
+							<li data-filter=".berry">Berry</li>
+							<li data-filter=".lemon">Lemon</li>
+						</ng-template>
+						</owl-carousel-o>
                         </ul>
                     </div>
                 </div>
             </div>
+		   
 
 			<div class="row product-lists">
 				<div class="col-lg-4 col-md-6 text-center strawberry">

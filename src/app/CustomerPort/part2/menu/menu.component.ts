@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
@@ -18,4 +19,19 @@ export class MenuComponent implements OnInit {
       this.spinner.hide();
     },2000);
   }
+  customOptions: OwlOptions = {
+    loop:true,
+    margin:10,
+    autoplay: true,
+    pullDrag:true,
+    touchDrag:true,
+    nav: true,
+    navText: ['<', '>'],
+    responsive:{
+        0:{
+            items:1
+        },
+      },
+
+    }
 }
