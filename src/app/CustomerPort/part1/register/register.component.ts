@@ -15,14 +15,7 @@ import { NgxSpinnerService } from 'ngx-spinner';
 })
 export class RegisterComponent {
 [x: string]: any;
-	fname: string = "";
-	lname: string = "";
-	addrss: string = "";
-	phone : string ="";
-	//gender: boolean =false;
-	email: string ="";
-	password: string="";
-	username: string="";
+	
 	
 	closeResult!: string;
 
@@ -35,7 +28,15 @@ export class RegisterComponent {
 
 		
 	}
-
+	
+	fname: string = "";
+	lname: string = "";
+	addrss: string = "";
+	phone : string ="";
+	//gender: boolean =false;
+	email: string ="";
+	password: string="";
+	username: string="";
 
 	
 	Register(){
@@ -47,27 +48,32 @@ export class RegisterComponent {
 			"addrss": this.addrss,
 			"password": this.password,
 			"phone": this.phone,
-			"gender":this.gender,
+			//"gender":this.gender,
 		}
 		
 		this.backend.AddCustomer(Requestreister).subscribe((res) => {
-			console.log(res)
+			debugger
+			//console.log(res)
 			let obj = JSON.parse(JSON.stringify(res))
+			debugger
 			console.log(obj)
-			console.log(obj.response.username)
+			//console.log(obj.response.username)
 	  
-			console.log(obj)
-			console.log(obj.response.username)
-			if(obj.ResponseCode==200){
-			  this.toastrService.success("Welcom in Store")
-			  this.router.navigate(["login"])
-	   
-			}
-			else{
-	   
-			}this.toastrService.error('Please Register','Major Error',{timeOut : 300 });
-		   
+			//console.log(obj)
+			//console.log(obj.response.username)
+
 	   
 		  })
+		  this.router.navigate(["/login"])
+
+		  /*if(this.obj.RegisterComponent== 200){
+			this.toastrService.success("Welcom in Store")
+			this.router.navigate(["/login"])
+	 
+		  }
+		  else{
+			  this.toastrService.error('Please Register','Major Error',{timeOut : 300 });
+		  }*/
+		 
 	}	
 }

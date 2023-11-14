@@ -18,7 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
     RouterModule,
     BrowserAnimationsModule ,  
     ToastrModule.forRoot(),
-    HttpClientModule 
+    HttpClientModule,
  
 
   ],
